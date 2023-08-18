@@ -45,29 +45,6 @@ public interface DatabaseDialect {
     public int getPageLastNum(int page, int pageSize);
 
     /**
-     * get page limit top data sql,contain  placeholder.
-     * @param sql orign sql
-     * @return append limit sql
-     */
-    public String getLimitTopSqlWithMark(String sql);
-
-    /**
-     * get page limit page data sql,contain  placeholder.
-     * @param sql orign sql
-     * @return append limit sql
-     */
-    public String getLimitPageSqlWithMark(String sql);
-
-    /**
-     * get page limit page data sql,using number.
-     * @param sql orign sql
-     * @param pageNo current pageNo
-     * @param pageSize current pageSize
-     * @return contain page number param sql
-     */
-    public String getLimitPageSql(String sql, int pageNo, int pageSize);
-    
-    /**
      * get page limit page data sql,using offset.
      * @param sql orign sql
      * @param startOffset current offset row
